@@ -1,31 +1,3 @@
-# LSI = pH - pHs
-
-# Where:
-# pH is the measured water pH
-# pHs is the pH at saturation in calcite or calcium carbonate and is defined as:
-
-# pHs = (9.3 + A + B) - (C + D)
-
-# Where:
-# A = (Log10 [TDS] - 1) / 10
-# B = -13.12 x Log10 (deg C + 273) + 34.55
-# C = Log10 [Ca2+ as CaCO3] - 0.4
-# D = Log10 [alkalinity as CaCO3]
-
-# The indications for the LSI and the improved LSI by Carrier are based on the following values:
-
-# LSI	Indication
-# LSI<0	Water is undersaturated with respect to calcium carbonate. Undersaturated water has a tendency to remove existing calcium carbonate protective coatings in pipelines and equipment.
-# LSI=0	Water is considered to be neutral. Neither scale-forming nor scale removing.
-# LSI>0	Water is supersaturated with respect to calcium carbonate (CaCO3) and scale forming may occur.
-
-
-# LSI (Carrier)	Indication
-# -2,0<-0,5	Serious corrosion
-# -0,5<0	Slightly corrosion but non-scale forming
-# LSI = 0,0	Balanced but pitting corrosion possible
-# 0,0<0,5	Sligthly scale forming and corrosive
-# 0,5<2	Scale forming but non corrosive
 
 # Read more: http://www.lenntech.com/calculators/langelier/index/langelier.htm#ixzz4bbswoh9P
 
@@ -34,16 +6,17 @@ import math  # This will import math module
 import platform
 import os
 
-# clear the terminal either in windows or *nix
-if platform.system() == 'Windows':
-    os.system('cls')
-else:
-    os.system('clear')
+def clear_screen:
+    # clear the terminal either in windows or *nix
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
 
-myos = platform.system()
+    myos = platform.system()
 
-print('Hey, you appear to be running: ', myos)
-print()
+    print('Hey, you appear to be running: ', myos)
+    print()
 
 # Simple F to C converter. It works!
 Celsius = input("Enter a temperature in Celsius: ")
