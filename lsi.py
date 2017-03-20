@@ -6,7 +6,7 @@ import math  # This will import math module
 import platform
 import os
 
-def clear_screen:
+def clear_screen():
     # clear the terminal either in windows or *nix
     if platform.system() == 'Windows':
         os.system('cls')
