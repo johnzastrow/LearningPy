@@ -34,12 +34,13 @@ def print_birthday_information(days):
     else:
         print('Happy birthday!!!')
 
-date1 = now
-date2 = birthday
-dt = date1 - date2
-days = int(dt.total_seconds() / 60 / 60 / 24)
-print(days)
 
+def print_age(original_date, now):
+    date1 = now
+    date2 = datetime.datetime(original_date.year, original_date.month, original_date.day)
+    tdt = date1 - date2
+    tdays = int(tdt.total_seconds() / 60 / 60 / 24)
+    print(tdays)
 
 def main():
     print_header()
@@ -47,6 +48,6 @@ def main():
     now = datetime.datetime.now()
     number_of_days = compute_days_between_dates(bday, now)
     print_birthday_information(number_of_days)
-
+    print_age(now)
 
 main()
