@@ -18,9 +18,9 @@ def get_birthday_from_user():
     return birthday
 
 
-def compute_days_between_dates(original_date, now):
+def compute_days_between_dates(bday, now):
     date1 = now
-    date2 = datetime.datetime(now.year, original_date.month, original_date.day)
+    date2 = datetime.datetime(now.year, bday.month, bday.day)
     dt = date1 - date2
     days = int(dt.total_seconds() / 60 / 60 / 24)
     return days
@@ -35,12 +35,15 @@ def print_birthday_information(days):
         print('Happy birthday!!!')
 
 
-def print_age(original_date, now):
+def print_age(bday, now):
     date1 = now
-    date2 = datetime.datetime(original_date.year, original_date.month, original_date.day)
+    date2 = datetime.datetime(bday.year, bday.month, bday.day)
     tdt = date1 - date2
     tdays = int(tdt.total_seconds() / 60 / 60 / 24)
-    print(tdays)
+    tyears = tdays/365
+    print('Your are', tdays, 'days old')
+    print('Your are', tyears, 'years old')
+
 
 def main():
     print_header()
@@ -48,6 +51,6 @@ def main():
     now = datetime.datetime.now()
     number_of_days = compute_days_between_dates(bday, now)
     print_birthday_information(number_of_days)
-    print_age(now)
+    print_age(bday, now)
 
 main()
