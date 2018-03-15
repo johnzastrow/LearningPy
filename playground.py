@@ -18,6 +18,7 @@ def nug():
     my_string = 'Hello, World!'
     print(my_string)
     my_bool = 5 > 9  # A Boolean value will return either True or False
+    print (my_bool)
 
     my_list = ['item_1', 'item_2', 'item_3', 'item_4']
     print(my_list)
@@ -25,11 +26,13 @@ def nug():
     print(my_tuple)
     my_dict = {'letter': 'g', 'number': 'seven', 'symbol': '&'}
     print(my_dict)
+    print("I am done!")
 
 
 def logfile():
     path = 'days.txt'
     # every time you do something like read a file, you need to re-open it for the next op
+    print(path)
     days_file = open(path, 'r')
     reader = days_file.read()
     days_file.close()
