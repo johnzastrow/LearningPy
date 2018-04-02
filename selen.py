@@ -1,4 +1,4 @@
-omfrom selenium import webdriver
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 user = ""
 pwd = ""
@@ -11,7 +11,6 @@ elem = driver.find_element_by_id("pass")
 elem.send_keys(pwd)
 elem.send_keys(Keys.RETURN)
 driver.close()
-
 
 # Code line 1: From selenium module import webdriver
 # Code line 2: From selenium module import Keys
