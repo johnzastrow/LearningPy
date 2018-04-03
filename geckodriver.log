@@ -1,0 +1,54 @@
+1522709099342	geckodriver	INFO	geckodriver 0.20.0
+1522709099357	geckodriver	INFO	Listening on 127.0.0.1:54233
+1522709100377	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.RPHCDfUtQEbu"
+1522709101512	Marionette	INFO	Enabled via --marionette
+1522709103888	Marionette	INFO	Listening on port 33523
+1522709103944	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711322492	geckodriver	INFO	geckodriver 0.20.0
+1522711322560	geckodriver	INFO	Listening on 127.0.0.1:44443
+1522711323695	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.k1VPLYO1MFLx"
+1522711325484	Marionette	INFO	Enabled via --marionette
+1522711328444	Marionette	INFO	Listening on port 41015
+1522711328542	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientSource::Msg_ExecutionReady Route error: message sent to unknown actor ID
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711341717	geckodriver::marionette	ERROR	Failed to stop browser process
+1522711701344	geckodriver	INFO	geckodriver 0.20.0
+1522711701395	geckodriver	INFO	Listening on 127.0.0.1:46795
+1522711702715	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FV7TUR6r2hk7"
+1522711704652	Marionette	INFO	Enabled via --marionette
+1522711707870	Marionette	INFO	Listening on port 39741
+1522711707906	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711733890	geckodriver::marionette	ERROR	Failed to stop browser process
+1522711733920	geckodriver	INFO	geckodriver 0.20.0
+1522711733930	geckodriver	INFO	Listening on 127.0.0.1:57485
+1522711735214	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.AZpZ7OpNlSpX"
+1522711737018	Marionette	INFO	Enabled via --marionette
+1522711739282	Marionette	INFO	Listening on port 41403
+1522711739384	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13653): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711746249	geckodriver::marionette	ERROR	Failed to stop browser process
+1522711929870	geckodriver	INFO	geckodriver 0.20.0
+1522711929883	geckodriver	INFO	Listening on 127.0.0.1:51461
+1522711930104	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GLRJ3WwyK9Du"
+1522711931674	Marionette	INFO	Enabled via --marionette
+1522711935198	Marionette	INFO	Listening on port 33045
+1522711935300	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711965700	geckodriver::marionette	ERROR	Failed to stop browser process
+1522711965737	geckodriver	INFO	geckodriver 0.20.0
+1522711965745	geckodriver	INFO	Listening on 127.0.0.1:47479
+1522711967338	mozrunner::runner	INFO	Running command: "/usr/local/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QLQddMX9AU42"
+1522711969662	Marionette	INFO	Enabled via --marionette
+1522711972468	Marionette	INFO	Listening on port 46621
+1522711972620	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:14487): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Permission denied
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522711981104	geckodriver::marionette	ERROR	Failed to stop browser process
