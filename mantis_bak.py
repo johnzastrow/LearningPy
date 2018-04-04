@@ -24,11 +24,26 @@ browser = webdriver.Chrome()
 browser.get('https://se.mantishub.io/manage_backup_page.php')
 
 # wait for email field and enter email
-WebDriverWait(browser, 10).until(EC.element_to_be_clickable(USERFIELD)).send_keys("myEmailAddress")
+WebDriverWait(browser, 10).until(EC.element_to_be_clickable(USERFIELD)).send_keys("jzastrow@syseng.com")
 
 # Click Login to go to the next screen
 # driver.find_element_by_xpath("//input[@type='submit' and @value='something']").click())
 browser.find_element_by_xpath("//input[@type='submit']").click()
 
-browser.quit()
+# wait for password field and enter password
+WebDriverWait(browser, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys("mj9230DQ@")
+
+# Click Login to go to the next screen
+# driver.find_element_by_xpath("//input[@type='submit' and @value='something']").click())
+browser.find_element_by_xpath("//input[@type='submit']").click()
+
+# https://se.mantishub.io/manage_backup_download.php?type=data
+link = browser.find_element_by_link_text('type=data')
+
+link.click()
+
+# <input tabindex="1" type="submit" class="btn btn-primary btn-white btn-round" value="Request Backup" />
+
+browser.implicitly_wait(10)
+# browser.quit()
 browser.close()
