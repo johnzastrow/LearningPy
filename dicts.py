@@ -15,6 +15,8 @@ for me in [1, 2, 3, 4, 5, 6]:
     print(me)
     print('me------')
 
+
+
 print("*********************************************")
 for element_from_pets in ['doggy', 'catty', 'poodlely', 'Maine Coon catty']:
     print(element_from_pets)
