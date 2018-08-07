@@ -37,8 +37,11 @@ for pg in url:
 
 
 # open a csv file with append, so old data will not be erased
-with open('index.csv', 'a') as csv_file:
-    writer = csv.writer(csv_file)
-    # The for loop
-    for name, price in data:
-        writer.writerow([name, price, datetime.now()])
+# with open('index.csv', 'a') as csv_file:
+    #   writer = csv.writer(csv_file)
+    #   # The for loop
+for name, price in data:
+    #       writer.writerow([name, price, datetime.now()])
+    # writer = csv.writer(csv_file)
+    # writer.writerow([name, price, datetime.now()])
+    print([name, price, datetime.now()])
