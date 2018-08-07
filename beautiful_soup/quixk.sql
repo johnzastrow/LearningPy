@@ -1,0 +1,1 @@
+select * from stocks where date is null
