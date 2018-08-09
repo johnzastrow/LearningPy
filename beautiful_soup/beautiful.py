@@ -1,8 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
-import csv
-from datetime import datetime
-
+# import csv
+# from datetime import datetime
 
 url = ['https://www.bloomberg.com/quote/CCMP:IND', 'https://www.bloomberg.com/quote/SPX:IND']
 data = []
@@ -24,7 +23,6 @@ for pg in url:
 
     # strip() is used to remove starting and trailing
     name = name_box.text.strip()
-
     print(name)
 
     # Similarly, we can get the price too.
@@ -33,15 +31,9 @@ for pg in url:
     price = price_box.text
     print(price)
 
-# Prints out the current price of the S&P 500 Index.
-
-
 # open a csv file with append, so old data will not be erased
-# with open('index.csv', 'a') as csv_file:
-    #   writer = csv.writer(csv_file)
-    #   # The for loop
-for name, price in data:
-    #       writer.writerow([name, price, datetime.now()])
-    # writer = csv.writer(csv_file)
-    # writer.writerow([name, price, datetime.now()])
-    print([name, price, datetime.now()])
+#    with open('beautiful_soup/index.csv', 'a') as csv_file:
+#        writer = csv.writer(csv_file)
+# The for loop
+#    for name, price in data:
+#        writer.writerow([name, price]
