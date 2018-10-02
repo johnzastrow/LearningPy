@@ -15,35 +15,35 @@ def nug():
         print("{:3d} {:4d} {:5d}".format(i, i ^ 2, i * i * i))
     print()
     print(my_int - 5493)
-    my_string = 'Hello, World!'
+    my_string = "Hello, World!"
     print(my_string)
     my_bool = 5 > 9  # A Boolean value will return either True or False
-    print (my_bool)
+    print(my_bool)
 
-    my_list = ['item_1', 'item_2', 'item_3', 'item_4']
+    my_list = ["item_1", "item_2", "item_3", "item_4"]
     print(my_list)
-    my_tuple = ('one', 'two', 'three')
+    my_tuple = ("one", "two", "three")
     print(my_tuple)
-    my_dict = {'letter': 'g', 'number': 'seven', 'symbol': '&'}
+    my_dict = {"letter": "g", "number": "seven", "symbol": "&"}
     print(my_dict)
     print("I am done!")
 
 
 def logfile():
-    path = 'days.txt'
+    path = "days.txt"
     # every time you do something like read a file, you need to re-open it for the next op
     print(path)
-    days_file = open(path, 'r')
+    days_file = open(path, "r")
     reader = days_file.read()
     days_file.close()
     print()
 
-    days_file = open(path, 'r')
+    days_file = open(path, "r")
     readl = days_file.readline()
     days_file.close()
     print()
 
-    days_file = open(path, 'r')
+    days_file = open(path, "r")
     readl_s = days_file.readlines()
     days_file.close()
     print(reader)
@@ -54,9 +54,9 @@ def logfile():
     print(readl_s)
 
     # now we will append data
-    days_file = open(path, 'a')
-    days_file.write('\n I am a newline')
-    days_file = open(path, 'r')
+    days_file = open(path, "a")
+    days_file.write("\n I am a newline")
+    days_file = open(path, "r")
     reader = days_file.read()
     days_file.close()
     print()
@@ -65,7 +65,7 @@ def logfile():
 def main():
     nug()
     logfile()
-    print('DONE!')
+    print("DONE!")
 
 
 main()

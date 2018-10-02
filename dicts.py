@@ -1,29 +1,28 @@
 # I am some dictionaries
-ages = {'Kevin': 59, 'alex': 29, 'bob': 40}
+ages = {"Kevin": 59, "alex": 29, "bob": 40}
 ages
 print(ages)
 
 for i in ages:
-    print('i')
+    print("i")
     print("888888888888")
 
-for noun in ['dog', 'cat', 'poodle', 'Maine Coon cat']:
+for noun in ["dog", "cat", "poodle", "Maine Coon cat"]:
     print(noun)
     print("-----------------------")
 
 for me in [1, 2, 3, 4, 5, 6]:
     print(me)
-    print('me------')
-
+    print("me------")
 
 
 print("*********************************************")
-for element_from_pets in ['doggy', 'catty', 'poodlely', 'Maine Coon catty']:
+for element_from_pets in ["doggy", "catty", "poodlely", "Maine Coon catty"]:
     print(element_from_pets)
     print("")
 
 
-pets = ['dog', 'cat', 'poodle', 'Maine Coon cat']
+pets = ["dog", "cat", "poodle", "Maine Coon cat"]
 total = 0
 for pet in pets:
     length = len(pet)

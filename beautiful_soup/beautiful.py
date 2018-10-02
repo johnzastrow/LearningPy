@@ -1,9 +1,13 @@
 from bs4 import BeautifulSoup
 import urllib.request
+
 # import csv
 # from datetime import datetime
 
-url = ['https://www.bloomberg.com/quote/CCMP:IND', 'https://www.bloomberg.com/quote/SPX:IND']
+url = [
+    "https://www.bloomberg.com/quote/CCMP:IND",
+    "https://www.bloomberg.com/quote/SPX:IND",
+]
 data = []
 for pg in url:
     # page = urllib.request.urlopen(pg)
@@ -14,10 +18,10 @@ for pg in url:
     # BeautifulSoup to work on it.
 
     # parse the html using beautiful soup and store in variable `soup`
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     # Take out the <div> of name and get its value
-    name_box = soup.find('h1', attrs={'class': 'name'})
+    name_box = soup.find("h1", attrs={"class": "name"})
 
     # After we have the tag, we can get the data by getting its text.
 
@@ -27,7 +31,7 @@ for pg in url:
 
     # Similarly, we can get the price too.
 
-    price_box = soup.find('div', attrs={'class': 'price'})
+    price_box = soup.find("div", attrs={"class": "price"})
     price = price_box.text
     print(price)
 
